@@ -1,11 +1,6 @@
 {
   "name": "build-ai-powered-apps-hamedani-setting-up",
   "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "bun run index.ts"
-  },
   "devDependencies": {
     "@types/bun": "latest",
     "concurrently": "^10.0.3"
@@ -13,11 +8,12 @@
   "peerDependencies": {
     "typescript": "^5"
   },
+  "private": true,
+  "scripts": {
+    "dev": "bun run index.ts"
+  },
+  "type": "module",
   "workspaces": [
     "packages/*"
-  ],
-  "dependencies": {
-    "@tailwindcss/vite": "^4.3.2",
-    "tailwindcss": "^4.3.2"
-  }
+  ]
 }
